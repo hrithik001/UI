@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  font-family: "Nunito Sans";
+}
+
+.name-color {
+  color: rgb(88, 22, 96);
+}
+.greet-color {
+  color: grey;
+}
+
+.text-pr {
+  color: blueviolet;
+}
+.text-grey {
+  color: grey;
+}
+.interview-type {
+  background-color: rgb(222, 230, 230);
+}
+.text-dark-blue {
+  color: rgba(35, 89, 125, 1);
+}
+.bg-img {
+  background: url("assets/Confetti.svg");
+}
+.shadow-c {
+  box-shadow: 0px 2px 12px 0px rgba(54, 89, 226, 0.12);
+}
+.font-color {
+  color: rgba(104, 52, 255, 1);
+  font-weight: 400;
+  font-size: 14px;
+}
+.p-c {
+  padding: 0px 50px;
+}
+.p-h {
+  padding-left: 10px;
+}
+
+/* new classes here */
+
+.p-16-32 {
+  padding: 16px 32px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-24 {
+  gap: 25px;
+}
+.p-70 {
+  padding: 0px 70px;
+}
+.container {
+  padding: 0px 70px;
+  gap: 25px;
+  display: grid;
+}
+.font-style {
+  font-weight: 300;
+  color: rgba(44, 22, 107, 1);
+
+  font-size: 28px;
+  line-height: 42px;
+}
+.p-24 {
+  padding: 24px 0px;
+}
+.sub-title {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(44, 22, 107, 1);
+}
+.bg-vector {
+  background-image: url("assets/Confetti.svg");
+}
+.p-16 {
+  padding: 16px;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.p-10 {
+  padding: 10px;
+}
+
+.btn {
+  /* padding: 10px 16px; */
+  border-radius: 6px;
+  padding-right: 16px;
+}
+.btn-font {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+.p-20-12 {
+  padding: 10px 16px;
+}
+.card-title-b {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+.dark-blue {
+  color: rgba(35, 89, 125, 1);
+}
+.p-17-20 {
+  padding: 15px 20px;
+}
+.light-grey {
+  color: rgba(119, 119, 119, 1);
+}
+.bg-purple {
+  color: blueviolet;
+
+  background: rgba(240, 235, 255, 1);
+}
+
+.bg-light-blue {
+  background-color: rgba(239, 248, 255, 1);
+
+  color: rgba(21, 112, 239, 1);
+}
+.p-4-8 {
+  padding: 4px 8px;
+}
+.date-font {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.bg-light-grey {
+  color: rgba(119, 119, 119, 1);
+  background-color: rgba(245, 246, 247, 1);
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+.purple {
+  color: blueviolet;
+}
+.blue {
+  color: rgba(21, 112, 239, 1);
+}

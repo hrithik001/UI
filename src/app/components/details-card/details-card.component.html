@@ -1,0 +1,69 @@
+<div class="card border-0 shadow-c p-16 g-24">
+  <div class="row mb-12">
+    <div class="col-6">
+      <span class="card-title">{{ item.title }}</span>
+    </div>
+    <div class="col-6 text-end">
+      @if (item.status) {
+      <img src="assets/_Avatar.svg" alt="" height="20px" width="20px" />
+      } @else {
+      <span class="bg-light-blue btn-font btn p-4-8">Upcoming</span>
+      }
+    </div>
+  </div>
+
+  <div class="row mb-12">
+    <div class="row">
+      <span class="light-grey">{{ item.typeTitle }}</span>
+    </div>
+    <div class="row mt-1">
+      <!-- <div *ngFor="let type of item.types">
+        <span class="bg-light-grey rounded btn-font mr-1 p-4-8">
+          @if (type==='AI Interview'){
+          <img src="assets/Sparkle.png" alt="sparkle image" />
+          } {{ type }}</span
+        >
+      </div> -->
+      <div class="">
+        @for(item of item.types;track $index ){
+        <span class="bg-light-grey rounded btn-font me-1 p-4-8">
+          @if (item==='AI Interview'){
+          <img src="assets/Sparkle.png" alt="sparkle image" />
+          } {{ item }}</span
+        >
+        }
+      </div>
+      <!-- <div>
+        <span class="bg-light-grey rounded btn-font mr-1 p-4-8 me-2"
+          ></span
+        >
+        <span class="bg-light-grey rounded btn-font mr-1 p-4-8">
+          <img src="assets/Sparkle.png" alt="sparkle image" /> Ai
+          Interview</span
+        >
+      </div> -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="row">
+      <div class="col-6">
+        <span class="light-grey">{{ item.startingName }}</span>
+      </div>
+      <div class="col-6">
+        <span class="light-grey">{{ item.dueName }}</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <span class="date-font">{{ item.startingDate }}</span>
+      </div>
+      <div class="col-6">
+        <span class="date-font">{{ item.dueDate }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row flex-row-reverse mt-24 btn-font me-1">
+    <button class="border-0 btn bg-purple w-auto">Attempt</button>
+    <button class="border-0 btn purple w-auto">View Details</button>
+  </div>
+</div>

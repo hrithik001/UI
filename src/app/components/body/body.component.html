@@ -1,0 +1,94 @@
+<div class="container mt-4 gap-20">
+  <div class="row">
+    <div class="font-style">
+      <span class="greet-color">Welcome, </span
+      ><span class="name-color"> Hrithik roshan kumar</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div
+        class="card border-0 shadow-c d-flex flex-row justify-content-between align-content-center"
+      >
+        <div class="p-10">
+          <img src="assets/progress.svg" alt="" class="me-3" />
+          <span class="card-title">Incomplete Progress</span>
+        </div>
+        <div class="p-10">
+          <button class="btn btn-font bg-purple mt-1">upcoming</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div
+        class="card border-0 shadow-c d-flex flex-row justify-content-between align-content-center bg-vector"
+      >
+        <div class="p-17-20">
+          <img src="assets/cart.svg" alt="" class="me-3" />
+          <span class="card-title-b dark-blue"
+            >10% off on your next booking</span
+          >
+        </div>
+        <div class="p-10">
+          <button class="btn btn-font bg-purple mt-1">Book now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col-6 sub-title">
+        <span>My Schedule (1) </span>
+      </div>
+      <div class="col-6 text-end">
+        <span class="btn-font purple"
+          >View all <img src="assets/chevron-right.png" alt="" />
+        </span>
+      </div>
+    </div>
+    <div class="row mt-24">
+      @for (data of datas; track $index) {
+      <!-- <div > -->
+      <app-details-card
+        class="col-12 col-lg-6 col-xl-4"
+        [item]="data"
+      ></app-details-card>
+      <!-- </div> -->
+      }
+    </div>
+  </div>
+
+  <div class="row sub-title">
+    <span>Menu</span>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="card border-0 shadow-c">
+        <div class="row m-4">
+          <div class="col-10">
+            <div class="row card-title">Orders</div>
+            <div class="row btn-font blue">you have unused order</div>
+          </div>
+          <div class="col-2 text-end align-self-center">
+            <img src="assets/chevron-right-grey.svg" alt="right arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="card border-0 shadow-c">
+        <div class="row m-4">
+          <div class="col-10">
+            <div class="row card-title">Activity</div>
+            <div class="row btn-font light-grey">
+              Track your activity across the platform
+            </div>
+          </div>
+          <div class="col-2 text-end align-self-center">
+            <img src="assets/chevron-right-grey.svg" alt="right arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
