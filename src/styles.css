@@ -85,6 +85,9 @@
 .p-16 {
   padding: 16px;
 }
+.pe-16 {
+  padding-right: 16px;
+}
 .card-title {
   font-weight: 600;
   font-size: 16px;
@@ -94,11 +97,6 @@
   padding: 10px;
 }
 
-.btn {
-  /* padding: 10px 16px; */
-  border-radius: 6px;
-  padding-right: 16px;
-}
 .btn-font {
   font-weight: 400;
   font-size: 12px;
@@ -154,10 +152,27 @@
 }
 .purple {
   color: blueviolet;
+  background: transparent;
+}
+.purple:hover {
+  background: rgba(240, 235, 255, 1);
 }
 .blue {
   color: rgba(21, 112, 239, 1);
 }
 .shadow-c {
   box-shadow: 0px 2px 12px 0px rgba(54, 89, 226, 0.12);
+}
+.button-big {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+.tag {
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.card {
+  border: none;
 }

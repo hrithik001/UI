@@ -1,13 +1,18 @@
-<div class="card border-0 shadow-c p-16 g-24">
+<div class="card border-0 shadow-c p-16 mb-3">
   <div class="row mb-12">
     <div class="col-6">
       <span class="card-title">{{ item.title }}</span>
     </div>
     <div class="col-6 text-end">
       @if (item.status) {
-      <img src="assets/_Avatar.svg" alt="" height="20px" width="20px" />
+      <img
+        src="assets/_Avatar.svg"
+        alt="interview ongoing icon"
+        height="20px"
+        width="20px"
+      />
       } @else {
-      <span class="bg-light-blue btn-font btn p-4-8">Upcoming</span>
+      <span class="bg-light-blue btn-font tag">Upcoming</span>
       }
     </div>
   </div>
@@ -24,7 +29,7 @@
           } {{ type }}</span
         >
       </div> -->
-      <div class="">
+      <div>
         @for(item of item.types;track $index ){
         <span class="bg-light-grey rounded btn-font me-1 p-4-8">
           @if (item==='AI Interview'){
@@ -62,8 +67,8 @@
       </div>
     </div>
   </div>
-  <div class="row flex-row-reverse mt-24 btn-font me-1">
-    <button class="border-0 btn bg-purple w-auto">Attempt</button>
-    <button class="border-0 btn purple w-auto">View Details</button>
+  <div class="row justify-content-end mt-24 btn-font pe-2">
+    <button class="button-big purple w-auto">View Details</button>
+    <button class="button-big bg-purple ms-2 w-auto">Attempt</button>
   </div>
 </div>
