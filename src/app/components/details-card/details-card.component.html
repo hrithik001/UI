@@ -18,10 +18,9 @@
   </div>
 
   <div class="row mb-12">
-    <div class="row">
-      <span class="light-grey">{{ item.typeTitle }}</span>
-    </div>
-    <div class="row mt-1">
+    <span class="light-grey">{{ item.typeTitle }}</span>
+
+    <div class="mt-1">
       <!-- <div *ngFor="let type of item.types">
         <span class="bg-light-grey rounded btn-font mr-1 p-4-8">
           @if (type==='AI Interview'){
@@ -49,24 +48,24 @@
       </div> -->
     </div>
   </div>
+
   <div class="row">
-    <div class="row">
-      <div class="col-6">
-        <span class="light-grey">{{ item.startingName }}</span>
-      </div>
-      <div class="col-6">
-        <span class="light-grey">{{ item.dueName }}</span>
-      </div>
+    <div class="col-6">
+      <span class="light-grey">{{ item.startingName }}</span>
     </div>
-    <div class="row">
-      <div class="col-6">
-        <span class="date-font">{{ item.startingDate }}</span>
-      </div>
-      <div class="col-6">
-        <span class="date-font">{{ item.dueDate }}</span>
-      </div>
+    <div class="col-6">
+      <span class="light-grey">{{ item.dueName }}</span>
     </div>
   </div>
+  <div class="row">
+    <div class="col-6">
+      <span class="date-font">{{ item.startingDate }}</span>
+    </div>
+    <div class="col-6">
+      <span class="date-font">{{ item.dueDate }}</span>
+    </div>
+  </div>
+
   <div class="row justify-content-end mt-24 btn-font pe-2">
     <button class="button-big purple w-auto">View Details</button>
     <button class="button-big bg-purple ms-2 w-auto">Attempt</button>
